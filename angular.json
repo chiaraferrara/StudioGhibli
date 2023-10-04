@@ -86,7 +86,7 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
+            "styles": ["/node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -94,5 +94,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "9c60749f-57a3-4837-bf7a-d382caf35fc7"
   }
 }

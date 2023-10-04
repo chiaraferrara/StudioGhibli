@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+body {
+  margin: 0;
+}
+
+a {
+  margin: 0px;
+}
+a,
+a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+section {
+  width: fit-content;
+  height: auto;
+}
+.container-header {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    align-content: flex-end;
+}
+
+header {
+  background-image: url("https://i.imgur.com/NkSssFf.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position-x: 87%;
+  font-size: 1rem;
+  font-family: "Righteous", cursive;
+  background-color: #dbdbdb;
+  text-align: center;
+  height: 300px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.headnav {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.container-header a{
+    margin-left: 1%;
+}
+@media screen and (max-width: 768px) {
+  .headnav {
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+  }
+
+  .headnav a {
+    margin: 2px 0;
+  }
+
+  .container-header {
+    width: 20%;
+    flex-flow: row wrap;
+  }
+  header {
+    background-color: #009cf1;
+    height: 140px;
+    width: 100%;
+    overflow: auto;
+  }
+}
+
+@media screen and (max-width: 479px) {
+    .headnav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%; 
+    }
+
+    .headnav a {
+        margin: 10px 0; 
+    }
+
+    .container-header {
+        width: 100%; 
+    }
+
+    header {
+        background-image: none;
+        background-color: #009cf1; 
+        height: auto; 
+    }
+}
+
+input {
+  margin-left: 150px;
+}
+
+.previewpic {
+  width: 150px;
+  height: 150px;
+  opacity: 50%;
+  padding: 50px;
+}
+
+.previewpic:hover {
+  opacity: 100%;
+}
+
+h2 {
+  font-family: "Righteous", cursive;
+}
+
+/* .button {
+  font-family: "Righteous", cursive;
+  width: 130px;
+  font-size: 12px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #222222;
+  text-decoration: none;
+  border-top: 2px solid #222222;
+  border-bottom: 2px solid #222222;
+  border-left: 2px solid #222222;
+  border-right: 2px solid #222222;
+  display: inline-block;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+} */
+.search {
+  border: 1px solid transparent;
+  border-radius: 5rem;
+}
+.searchbtn {
+  border: 1px solid transparent;
+  border-radius: 5rem;
+  margin-inline: 10px;
+}
+
+.btn {
+  
+  background-color: #009cf1;
+  border: transparent;
+  box-shadow: 0px 15px 0px #ffffff;
+  position: absolute;
+  font-size: 29px;
+  font-family: "Nunito Sans", sans-serif;
+  position: relative;
+  display: inline-block;
+  margin: 3px;
+}
+
+.btn:hover{
+    background-color: #ffffff;
+     box-shadow: 0px 15px 0px #ffffff;
+}
