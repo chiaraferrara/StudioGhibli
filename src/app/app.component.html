@@ -1,4 +1,7 @@
-<app-header [toggle]="toggle"></app-header>
-<app-main [toggle]="toggle" *ngIf="toggle" ></app-main>
-<app-about [toggle]="toggle" *ngIf="!toggle"></app-about>
+<button (click)="toggleSidebar()" style="position: absolute"><img src="https://github.com/chiaraferrara/StudioGhibli/blob/master/src/app/img/menu.png"></button>
+<app-header></app-header>
+
+<app-sidebar [isSidebarOpen]="isSidebarOpen"></app-sidebar>
+
+<router-outlet></router-outlet>
 <app-footer></app-footer>

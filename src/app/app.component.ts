@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'StudioGhibli';
 
-  toggle : boolean = true;
+  
+  isSidebarOpen = false;
+
+  toggleSidebar() {
+    this.isSidebarOpen = !this.isSidebarOpen;
+    console.log('isSidebarOpen:', this.isSidebarOpen);
+  }
 }
