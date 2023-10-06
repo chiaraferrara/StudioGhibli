@@ -7,9 +7,20 @@
     left: -250px;
     transition: left 0.3s ease;
     box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.144);
+    text-align: center;
   }
   
   .sidebar.open {
     left: 0;
 
+  }
+
+ 
+
+  .sidebar img{
+    opacity: 90%;
+  }
+
+  .sidebar img:hover{
+    opacity: 100%;
   }
