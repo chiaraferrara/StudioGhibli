@@ -1,6 +1,5 @@
 footer {
-    background-image: url("https://w.wallhaven.cc/full/0w/wallhaven-0wy2z7.jpg");
-    background-position-y: 50%;
+    
     clear: both;
     font-family: 'Nunito Sans';
     color: white;
@@ -11,3 +10,5 @@ footer {
     text-align: center;
     margin-top: 40px;
 }
+
+

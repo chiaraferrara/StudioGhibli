@@ -1,13 +1,15 @@
 .sidebar {
-    width: 150px;
-    height: 30%;
-    background-color: #333;
-    position:fixed;
-    top: 0;
+    width: 220px;
+    height: 98%;
+    background-color: rgb(255, 255, 255);
+    position:absolute;
+    top: 2%;
     left: -250px;
     transition: left 0.3s ease;
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.144);
   }
   
   .sidebar.open {
     left: 0;
+
   }

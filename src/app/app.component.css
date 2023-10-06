@@ -1,4 +1,23 @@
 .sidebarbutton{
     background-color: #009cf1;
-    border: 0px solid transparent;
+    border: 0px transparent;
 }
+
+.sidebarbutton:hover{
+    box-shadow: 0px 2px 0 white;
+}
+
+main {
+    margin-left: 0; 
+    transition: margin-left 0.3s ease; 
+  }
+  
+  main.with-sidebar {
+    margin-left: 250px; 
+  }
+
+  button.on-sidebar{
+    background-color: white;
+    box-shadow: 0px 2px 0 white;
+  }
+

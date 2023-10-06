@@ -18,12 +18,14 @@ section {
   height: auto;
 }
 .container-header {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0;
-    align-content: flex-end;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  justify-content: center;
+  align-content: flex-end;
+  align-items: flex-end;
 }
 
 header {
@@ -51,9 +53,26 @@ header {
 .container-header a{
     margin-left: 1%;
 }
+
+.btn {
+  
+  background-color: #009df100;
+  border: transparent;
+  box-shadow: 0px 15px 0px #ffffff;
+  position: absolute;
+  font-size: 29px;
+  font-family: "Nunito Sans", sans-serif;
+  position: relative;
+  display: inline-block;
+  margin: 3px;
+}
+
+.btn:hover{
+    background-color: #ffffff;
+     box-shadow: 0px 15px 0px #ffffff;
+}
 @media screen and (max-width: 768px) {
   .headnav {
-    flex-direction: row;
     align-items: center;
     width: 40%;
   }
@@ -72,11 +91,27 @@ header {
     width: 100%;
     overflow: auto;
   }
+
+  .btn {
+  margin-top:16px;
+    background-color: #009df100;
+    border: transparent;
+    box-shadow: none;
+    position: relative;
+    font-size: 29px;
+    font-family: "Nunito Sans", sans-serif;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .btn:hover{
+      background-color: #ffffff;
+       box-shadow: 0px 15px 0px #ffffff;
+  }
 }
 
 @media screen and (max-width: 479px) {
     .headnav {
-        flex-direction: column;
         align-items: center;
         width: 100%; 
     }
@@ -93,6 +128,19 @@ header {
         background-image: none;
         background-color: #009cf1; 
         height: auto; 
+    }
+
+    .btn {
+  
+      top:10%;
+      box-shadow: none;
+      font-size: 19px;
+      font-family: "Nunito Sans", sans-serif;
+    }
+    
+    .btn:hover{
+        background-color: #ffffff;
+         box-shadow: 0px 15px 0px #ffffff;
     }
 }
 
@@ -143,20 +191,4 @@ h2 {
   margin-inline: 10px;
 }
 
-.btn {
-  
-  background-color: #009cf1;
-  border: transparent;
-  box-shadow: 0px 15px 0px #ffffff;
-  position: absolute;
-  font-size: 29px;
-  font-family: "Nunito Sans", sans-serif;
-  position: relative;
-  display: inline-block;
-  margin: 3px;
-}
 
-.btn:hover{
-    background-color: #ffffff;
-     box-shadow: 0px 15px 0px #ffffff;
-}

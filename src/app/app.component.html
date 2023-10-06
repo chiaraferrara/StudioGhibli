@@ -1,7 +1,11 @@
-<button class= "sidebarbutton" (click)="toggleSidebar()" style="position: absolute"><img src="https://github.com/chiaraferrara/StudioGhibli/blob/3f4858a29cce95959742a40d7f1aca38e6b3d304/src/app/img/menu.png?raw=true" style="height: 10px"></button>
-<app-header></app-header>
-
 <app-sidebar [isSidebarOpen]="isSidebarOpen"></app-sidebar>
 
+
+<button class= "sidebarbutton" (click)="toggleSidebar()" [ngClass]="{'on-sidebar': isSidebarOpen}" style="position: absolute"><img src="https://github.com/chiaraferrara/StudioGhibli/blob/3f4858a29cce95959742a40d7f1aca38e6b3d304/src/app/img/menu.png?raw=true" style="height: 20px"></button>
+<app-header></app-header>
+<main [ngClass]="{'with-sidebar': isSidebarOpen}">
+
+
 <router-outlet></router-outlet>
+</main>
 <app-footer></app-footer>
