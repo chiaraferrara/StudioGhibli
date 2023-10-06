@@ -8,6 +8,9 @@
     transition: left 0.3s ease;
     box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.144);
     text-align: center;
+    /* z-index è una proprietà CSS utilizzata per controllare l'ordine di sovrapposizione degli elementi HTML */
+    z-index: 1000; 
+    
   }
   
   .sidebar.open {
