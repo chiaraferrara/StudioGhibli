@@ -6,6 +6,7 @@
 <main [ngClass]="{'with-sidebar': isSidebarOpen}">
 
 
-<router-outlet></router-outlet>
+<div style="width: 80%;
+margin: auto;"><router-outlet></router-outlet><app-aside></app-aside></div>
 </main>
 <app-footer></app-footer>
