@@ -1,4 +1,10 @@
-
+main{
+    width: 80%;
+    margin: auto;
+}
+div{
+    text-align: center;
+}
 article {
     padding: 2%;
 float: left;

@@ -75,6 +75,7 @@ header {
   .headnav {
     align-items: center;
     width: 40%;
+    justify-content: space-between;
   }
 
   .headnav a {
@@ -90,6 +91,7 @@ header {
     height: 140px;
     width: 100%;
     overflow: auto;
+    text-align: center;
   }
 
   .btn {
@@ -101,7 +103,6 @@ header {
     position: relative;
     font-size: 29px;
     font-family: "Nunito Sans", sans-serif;
-    position: relative;
     display: inline-block;
   }
   
