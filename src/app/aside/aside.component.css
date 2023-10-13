@@ -10,7 +10,7 @@ aside{
 div{
     border: 0px transparent;
     margin: 0;
-    width: max-content;
+    width: 40%;
     padding: 0%;
 }
 
@@ -22,7 +22,7 @@ div{
 
 
 figure{
-    width: 30%;
+    text-align: center;
     opacity: 60%;
 }
 
@@ -31,7 +31,6 @@ figure:hover{
 }
 
 figcaption{
-    text-align: center;
     font-size: 12px;
     padding: 0%;
     font-family: 'Martian Mono', monospace;
@@ -41,10 +40,30 @@ a, a:visited{
     color: black;
     text-decoration: none;
 }
+figure img{
+    width: 90%;
+    margin: auto;
+}
 @media screen and (max-width: 768px) {
-    
-    .aside-flexcontainer{
-        float: none;
-    }
 
+    aside{
+        display:inline-block;
+        clear:both;
+        margin:0;
+        
+    width: 100%;
+    }
+    figure img{
+        width: 30px;
+    }
+    
+
+    .aside-flexcontainer{
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
 }

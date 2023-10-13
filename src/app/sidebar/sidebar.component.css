@@ -2,14 +2,15 @@
     width: 220px;
     height: 100%;
     background-color: rgb(255, 255, 255);
-    position:absolute;
+    position:fixed;
     top: 2%;
     left: -250px;
     transition: left 0.3s ease;
-    box-shadow: 3px -10px 5px rgba(0, 0, 0, 0.144);
+    box-shadow: 6px 0px 5px rgba(0, 0, 0, 0.144);
     text-align: center;
     /* z-index è una proprietà CSS utilizzata per controllare l'ordine di sovrapposizione degli elementi HTML */
     z-index: 1000; 
+    bottom:0;
     
   }
   
